@@ -1,0 +1,5 @@
+@mixin heading($font,$size,$text){
+    font-family: $font;
+    font-size: $size;
+    color: $text;
+}

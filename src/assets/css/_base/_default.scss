@@ -1,0 +1,142 @@
+h3 {
+    @include heading($font-medium,27px,$pr-4-dark-3);
+}
+
+h4 {
+    @include heading($font-medium,22px,$pr-4-dark-3);
+}
+
+h5 {
+    @include heading($font-medium,17px,$pr-4-dark-3);
+}
+
+h6 {
+    @include heading($font-medium,15px,$pr-4-dark-3);
+}
+
+p {
+    @include heading($font-medium,14px,$pr-4-dark-1);
+}
+h1 {
+    @include heading($font-bold,35px,$pr-4-dark-3);
+}
+
+h2 {
+    @include heading($font-medium,33px,$pr-4-dark-2);
+}
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+    // width: 444px;
+    padding-left: 15px;
+    background-color: $prime-1;
+    color: #fff
+}
+
+p {
+    @include heading($font-medium,20px,$pr-4-dark-1);
+}
+p:hover {
+    padding: 15px;
+    background-color: $prime-1;
+    color: #fff;
+}
+
+
+.list-style-1 li{
+    @include heading($font-medium,15px,$pr-4-dark-1);
+    list-style-type: none;
+    position: relative;
+}
+ul.list-style-1 {
+    margin-left: 15px;
+    padding: 0;
+}
+
+.list-style-1 li::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $prime-1;
+    margin-right: 10px;
+}
+
+.list-style-1 li::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 3px;
+    border-left: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 7px;
+    left: 3px;
+}
+
+.quotation {
+    p {
+        @include heading($font-regular,17px,$pr-1-dark-1);
+        border-left: solid 2px $prime-1;
+        padding: 15px 0 15px 30px;
+        background-color: $pr-1-light-3;
+    }
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 220px 280px 200px 220px 200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+
+    button:nth-child(1),
+    button:nth-child(2),
+    button:nth-child(3),
+    button:nth-child(4),
+    button:nth-child(5) {
+        background-color: $prime-2;
+        color: #fff;
+        width: 220px;
+        height: 50px;
+        border:solid 1px $prime-2;
+        border-radius: 3px;
+        line-height: 50px;
+    }
+    button:nth-child(3),
+    button:nth-child(5) {
+        width: 200px;
+    }
+    button:nth-child(1):hover {
+        background-color: $pr-2-light-1;
+        border:solid 1px $pr-2-light-1;
+    }
+
+    button:nth-child(2) {
+        background-color: $pr-1-dark-1;
+        border:solid 1px $pr-1-dark-1;
+        width: 280px;
+    }
+    button:nth-child(2):hover {
+        background-color: $pr-1-light-2;
+        border:solid 1px $pr-1-light-2;
+    }
+
+
+    button:nth-child(6),
+    button:nth-child(7),
+    button:nth-child(8),
+    button:nth-child(9),
+    button:nth-child(10) {
+        background-color: $pr-4-light-2;
+        color: #fff;
+        height: 50px;
+        border-radius: 3px;
+        line-height: 50px;
+        border:solid 1px $pr-4-light-2;
+    }
+}
