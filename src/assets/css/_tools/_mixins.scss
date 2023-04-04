@@ -1,5 +1,34 @@
+// h p ul
 @mixin heading($font,$size,$text){
     font-family: $font;
     font-size: $size;
     color: $text;
 }
+
+.hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    background-color: $prime-1;
+    color: #fff
+}
+
+
+// buttons
+@mixin buttons($bgc,$text,$btn-w,$btn-h,$border,$radius,$line-h) {
+    border:solid 1px;
+    background-color: $bgc;
+    color: $text;
+    width: $btn-w;
+    height: $btn-h;
+    border-color: $border; //  black 3
+    border-radius: $radius;
+    line-height: $line-h;
+}
+
+@mixin btn-hover($bgc,$border){
+    background-color: $bgc;
+    border-color: $border;
+    color: #fff;
+}
+

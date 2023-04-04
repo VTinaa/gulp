@@ -1,40 +1,40 @@
-h3 {
-    @include heading($font-medium,27px,$pr-4-dark-3);
-}
+// h3 {
+//     @include heading($font-medium,27px,$pr-4-dark-3);
+// }
 
-h4 {
-    @include heading($font-medium,22px,$pr-4-dark-3);
-}
+// h4 {
+//     @include heading($font-medium,22px,$pr-4-dark-3);
+// }
 
-h5 {
-    @include heading($font-medium,17px,$pr-4-dark-3);
-}
+// h5 {
+//     @include heading($font-medium,17px,$pr-4-dark-3);
+// }
 
-h6 {
-    @include heading($font-medium,15px,$pr-4-dark-3);
-}
+// h6 {
+//     @include heading($font-medium,15px,$pr-4-dark-3);
+// }
 
-p {
-    @include heading($font-medium,14px,$pr-4-dark-1);
-}
-h1 {
-    @include heading($font-bold,35px,$pr-4-dark-3);
-}
+// p {
+//     @include heading($font-medium,14px,$pr-4-dark-1);
+// }
+// h1 {
+//     @include heading($font-bold,35px,$pr-4-dark-3);
+// }
 
-h2 {
-    @include heading($font-medium,33px,$pr-4-dark-2);
-}
-h1:hover,
-h2:hover,
-h3:hover,
-h4:hover,
-h5:hover,
-h6:hover {
-    // width: 444px;
-    padding-left: 15px;
-    background-color: $prime-1;
-    color: #fff
-}
+// h2 {
+//     @include heading($font-medium,33px,$pr-4-dark-2);
+// }
+// h1:hover,
+// h2:hover,
+// h3:hover,
+// h4:hover,
+// h5:hover,
+// h6:hover {
+    
+//     padding-left: 15px;
+//     background-color: $prime-1;
+//     color: #fff
+// }
 
 p {
     @include heading($font-medium,20px,$pr-4-dark-1);

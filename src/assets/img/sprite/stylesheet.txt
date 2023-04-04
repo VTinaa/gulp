@@ -1,0 +1,56 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Step1 {
+    width: 61px;
+    height: 61px;
+    background-position: -5px -5px;
+}
+
+.sprite-Step2 {
+    width: 51px;
+    height: 64px;
+    background-position: -5px -76px;
+}
+
+.sprite-Step3 {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -150px;
+}
+
+.sprite-Step4 {
+    width: 62px;
+    height: 62px;
+    background-position: -5px -220px;
+}
+
+.sprite-Vector1 {
+    width: 86px;
+    height: 89px;
+    background-position: -5px -292px;
+}
+
+.sprite-Vector2 {
+    width: 86px;
+    height: 88px;
+    background-position: -5px -391px;
+}
+
+.sprite-Vector3 {
+    width: 86px;
+    height: 88px;
+    background-position: -5px -489px;
+}
+
+
+<i class="sprite sprite-Step1"></i>
+<i class="sprite sprite-Step2"></i>
+<i class="sprite sprite-Step3"></i>
+<i class="sprite sprite-Step4"></i>
+<i class="sprite sprite-Vector1"></i>
+<i class="sprite sprite-Vector2"></i>
+<i class="sprite sprite-Vector3"></i>
