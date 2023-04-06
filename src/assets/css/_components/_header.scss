@@ -28,13 +28,22 @@
     
     /* border: 1px solid #03a9f4; */
 }
-.logo-color{
+span.logo-color{
+    font-family: 'Poppins-Light';
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
     color: #ecfa4d;
 }
 span.qweq {
     display: block;
+    font-family: 'Open Sans-regular';
     font-size: 13px;
-    margin-top: 0px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 13px;
+    margin-top: -25px;
 }
 .bg-top-header nav {
     grid-column-start: 6;
@@ -48,6 +57,11 @@ span.qweq {
 .bg-top-header li {
     /* float: left; */
     display: inline-block;
+}
+
+.bg-top-header h1 a {
+    font-family: 'Gabriola-logo';
+    font-size: 39px;
 }
 
 .bg-top-header a {
