@@ -2,11 +2,6 @@
     padding-top: 140px;
     // padding-bottom: 155px;
     padding-bottom: 20px;
-    // background: url(../../../assets/img/img_girl_sity_.png);
-    // background-image: url(../../img/img_girl_sity_.png);
-    // background-color: #d51616;
-    // background: $pr-1-light-3 url(../img/img_city.png) no-repeat bottom;
-    // background-size: cover;
     background-color: $pr-1-light-3;
     background-image: url(../img/img_city.png),url(../img/img_clouds.png);
     background-repeat: no-repeat, no-repeat;
@@ -45,6 +40,7 @@
 }
 
 .bg-banner button {
+    cursor: pointer;
     text-transform: uppercase;
     @include heading($font-semiBold,14px,$wight);
     @include buttons($prime-2, $wight, 220px, 50px, $prime-2,3px, 40px);
@@ -90,10 +86,7 @@
 
 }    
 .select-banner select {
-    // @include heading($font-medium,13px,$pr-4-light-2);
-        // font-family: 'Arial';
-        font-family: 'Poppins-Medium';
-        color: aqua;
+    @include heading($font-medium,13px,$pr-4-light-1);
         display: inline-block;
         width: 200px;
         cursor: pointer;
@@ -102,13 +95,12 @@
         border: 1px solid #ccc;
         border-radius: 3px;
         background: #f6f9f9;
-        color: #c7c7c7;
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        color: $pr-4-dark-1;
         margin-top: 5px;
         height:50px;
+        
 
     }
         .select-banner select::-ms-expand {
@@ -183,12 +175,10 @@ select .select:hover {
   .pagination a {
     background-color: #fff;
     height: 50px;
-    color: $pr-4-dark-1;
     // float: left;
     padding: 9px 18px;
     text-decoration: none;
     transition: background-color .3s;
-
     line-height: 30px;
 }
 .pagination a:nth-child(1),
@@ -199,6 +189,7 @@ select .select:hover {
     height: 50px;
     // border-radius: 2px;
     background-color: #f6f9f9;
+    color: $pr-4-light-1;
 }
 .pagination a:nth-child(1) {
     border-top-left-radius: 3px;
@@ -210,8 +201,9 @@ select .select:hover {
 }
 
 .pagination a.active {
+    // font-family: 'Poppins-Regular';
+    color: $pr-4-light-1;
     background: #f6f9f9;
-    color: $pr-4-dark-1;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
@@ -220,10 +212,10 @@ select .select:hover {
     background-color: #ddd;
 }
 //___________________________________________
-.banner-input button{
-    margin-top: 23px;
-}
+
 .banner-input button {
+    cursor: pointer;
+    margin-top: 26px;
     @include buttons($pr-1-dark-1, $wight, 200px, 50px, $pr-1-dark-1,3px, 40px)
 }
 .banner-input button:hover {
