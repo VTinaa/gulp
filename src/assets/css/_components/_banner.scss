@@ -1,0 +1,231 @@
+.bg-banner {
+    padding-top: 140px;
+    // padding-bottom: 155px;
+    padding-bottom: 20px;
+    // background: url(../../../assets/img/img_girl_sity_.png);
+    // background-image: url(../../img/img_girl_sity_.png);
+    // background-color: #d51616;
+    // background: $pr-1-light-3 url(../img/img_city.png) no-repeat bottom;
+    // background-size: cover;
+    background-color: $pr-1-light-3;
+    background-image: url(../img/img_city.png),url(../img/img_clouds.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, right 30px top;
+    background-size: 2080px, 660px;
+}
+
+.row-banner h1:nth-child(1) {
+    // font-family: $font-regular;
+    @include heading($font-regular,47px,$prime-1);
+    margin-bottom: 0;
+    word-spacing: -5px;
+}
+.row-banner h1:nth-child(2) {
+    @include heading($font-regular,47px,$pr-4-dark-2);
+    margin-top: 0;
+    line-height: 35px;
+    word-spacing: -5px;
+}
+
+.bg-banner hr {
+    width: 50px;
+    height: 3px;
+    margin: 0 auto -22px 0;
+    background-color: $prime-2;
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.bg-banner p {
+    width: 550px;
+    @include heading($font-regular,20px,$pr-4-dark-1);
+    border-top: 1px solid $pr-4-light-1;
+    padding-top: 40px;
+}
+
+.bg-banner button {
+    text-transform: uppercase;
+    @include heading($font-semiBold,14px,$wight);
+    @include buttons($prime-2, $wight, 220px, 50px, $prime-2,3px, 40px);
+    // color: $wight;
+}
+.bg-banner button:hover {
+    @include btn-hover($pr-2-light-1,$pr-2-light-1)
+}
+
+.row-banner {
+    position: relative;
+}
+.img-girl {
+    position: absolute;
+    top: -28px;
+    right: 42px;
+    z-index: 3;
+}
+
+// _____________________________________
+.banner-input {
+    background-color: $prime-1;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    position: relative;
+    top:70px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+}
+// select
+.banner-input .lable-2 {
+        @include heading($font-medium,13px,$wight);
+}
+.select-banner {
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    height:50px;
+
+}    
+.select-banner select {
+    // @include heading($font-medium,13px,$pr-4-light-2);
+        // font-family: 'Arial';
+        font-family: 'Poppins-Medium';
+        color: aqua;
+        display: inline-block;
+        width: 200px;
+        cursor: pointer;
+        padding: 15px;
+        outline: 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background: #f6f9f9;
+        color: #c7c7c7;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: $pr-4-dark-1;
+        margin-top: 5px;
+        height:50px;
+
+    }
+        .select-banner select::-ms-expand {
+            display: none;
+        }
+        .select-banner select:hover,
+        .select-banner select:focus {
+            // color: #000000;
+            background: #fff;
+
+        }
+        .select-banner select:disabled {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .select-banner select option {
+            height: 50px;
+            padding: 20px 0;
+        }
+.select_arrow {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border: solid #ccc;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.select-banner select:hover ~ .select_arrow,
+.select-banner select:focus ~ .select_arrow {
+    border-color: #ccc;
+}
+.select-banner select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+
+select .select:hover {
+    background-color: #fff;
+}
+
+.select-banner select:focus-visible + .select_arrow{
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    
+}
+.select-banner select:focus {
+    border-color: $prime-1;
+}
+
+
+// _____________________
+
+.pagination {
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .pagination a.bg-a {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    margin-right: -4.5px;
+    margin-left: -4px;
+    background-color: #f6f9f9;
+    // border-bottom: 1px solid #ccc;
+    // border-top: 1px solid #ccc;
+  }
+  .pagination a {
+    background-color: #fff;
+    height: 50px;
+    color: $pr-4-dark-1;
+    // float: left;
+    padding: 9px 18px;
+    text-decoration: none;
+    transition: background-color .3s;
+
+    line-height: 30px;
+}
+.pagination a:nth-child(1),
+.pagination a:nth-child(3) {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 50px;
+    // border-radius: 2px;
+    background-color: #f6f9f9;
+}
+.pagination a:nth-child(1) {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pagination a:nth-child(3) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.pagination a.active {
+    background: #f6f9f9;
+    color: $pr-4-dark-1;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+//___________________________________________
+.banner-input button{
+    margin-top: 23px;
+}
+.banner-input button {
+    @include buttons($pr-1-dark-1, $wight, 200px, 50px, $pr-1-dark-1,3px, 40px)
+}
+.banner-input button:hover {
+    @include btn-hover($pr-1-light-2,$pr-1-light-2)
+}

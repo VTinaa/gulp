@@ -36,14 +36,14 @@
 //     color: #fff
 // }
 
-p {
-    @include heading($font-medium,20px,$pr-4-dark-1);
-}
-p:hover {
-    padding: 15px;
-    background-color: $prime-1;
-    color: #fff;
-}
+// p {
+//     @include heading($font-medium,20px,$pr-4-dark-1);
+// }
+// p:hover {
+//     padding: 15px;
+//     background-color: $prime-1;
+//     color: #fff;
+// }
 
 
 .list-style-1 li{
@@ -79,14 +79,14 @@ ul.list-style-1 {
     left: 3px;
 }
 
-.quotation {
-    p {
-        @include heading($font-regular,17px,$pr-1-dark-1);
-        border-left: solid 2px $prime-1;
-        padding: 15px 0 15px 30px;
-        background-color: $pr-1-light-3;
-    }
-}
+// .quotation {
+//     p {
+//         @include heading($font-regular,17px,$pr-1-dark-1);
+//         border-left: solid 2px $prime-1;
+//         padding: 15px 0 15px 30px;
+//         background-color: $pr-1-light-3;
+//     }
+// }
 
 .buttons {
     display: grid;

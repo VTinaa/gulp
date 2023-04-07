@@ -9,6 +9,8 @@
     max-width: 1220px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .row {
     display: grid;
@@ -28,67 +30,145 @@
     
     /* border: 1px solid #03a9f4; */
 }
+.bg-top-header h1 a {
+    font-family: $font-GabrLo;
+    font-size: 39px;
+}
 span.logo-color{
-    font-family: 'Poppins-Light';
+    font-family: $font-light;
     font-size: 20px;
     font-weight: bolder;
     text-transform: uppercase;
     color: #ecfa4d;
 }
-span.qweq {
+span.logo-p {
     display: block;
-    font-family: 'Open Sans-regular';
+    font-family: $font-OpS-Regular;
     font-size: 13px;
     line-height: 30px;
     letter-spacing: 1px;
-    color: #fff;
+    color: $wight;
     font-size: 13px;
     margin-top: -25px;
 }
+// .bg-top-header .img-a {
+//     margin-right: 0;
+// }
+
+
+
 .bg-top-header nav {
     grid-column-start: 6;
     grid-column-end: 10;
 }
-.top-button {
-    grid-column-start: 10;
-    grid-column-end: 13;
-}
+// .bg-top-header li {
+//     display: inline-block;
+// }
 
-.bg-top-header li {
-    /* float: left; */
-    display: inline-block;
-}
 
-.bg-top-header h1 a {
-    font-family: 'Gabriola-logo';
-    font-size: 39px;
-}
 
 .bg-top-header a {
     /* display: inline-block; */
-    font-family: 'Open Sans-regular';
-    color: #fff;
-    margin-right: 35px;
+    // font-family: 'Open Sans-regular';
+    font-family: $font-semiBold;
+    color: $wight;
+    margin-right: 30px;
 }
-
-
-.bg-top-header .img-a {
-    margin-right: 0;
-}
-.top-button button {
-    font-family: 'Poppins-bold';
+.bg-top-header nav>a {
     font-size: 12px;
     text-transform: uppercase;
+}
+
+
+.select {
+    display: inline-block;
+
+    margin-left: -10px;
+}
+.select select {
+    font-family: $font-semiBold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $wight;
+    margin-right: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: $prime-1;
+}
+.select select:focus-visible {
+    outline: none;
+}
+
+i.fa-phone {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $wight;
+    color: $wight;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+.top-button {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    margin-left: 20px;
+}
+
+.top-button button {
+    @include heading($font-semiBold,12px,$wight);
+    // font-family: $font-semiBold;
+    // font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    cursor: pointer;
+
     // background-color: #3d648d;
     // border: 1px solid #3d648d;
     // color: #fff;
     // width: 100px;
     // height: 40px;
     // margin-left: 10px;
-    @include buttons($pr-1-dark-1, #fff, 100px, 40px, $pr-1-dark-1,3px, 30px)
+    @include buttons($pr-1-dark-1, $wight, 100px, 40px, $pr-1-dark-1,3px, 30px)
+}
+.top-button button:hover {
+    @include btn-hover($pr-1-light-2,$pr-1-light-2)
 }
 
 .top-button .but-2 {
-    @include buttons($prime-2, #fff, 100px, 40px, $prime-2,3px, 30px)
-
+    @include buttons($prime-2, $wight, 100px, 40px, $prime-2,3px, 30px)
 }
+.top-button .but-2:hover {
+    @include btn-hover($pr-2-light-1,$pr-2-light-1)
+}
+
+// Burger menyu
+.top-button ul {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.burger-icon, .burger-icon::before, .burger-icon::after{
+    display: inline-block;
+    background-color: $wight;
+    width: 25px;
+    height: 3px;
+    position: relative;
+}
+ .burger-icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+.burger-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+// ---------------------------
