@@ -221,3 +221,91 @@ select .select:hover {
 .banner-input button:hover {
     @include btn-hover($pr-1-light-2,$pr-1-light-2)
 }
+
+
+
+// Adaptation
+
+// lj
+@media (max-width:1024px) {
+
+    .banner-input {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr;
+
+        background-image: url(../img/cloud-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+}
+
+// table
+@media (max-width:950px) {
+    .bg-banner {
+        padding-top: 70px;
+    }
+    .img-girl img {
+        width: 200px;
+    }
+    .img-girl {
+        top: 145px;
+        right: 21px;
+    }
+    .bg-banner {
+        background-size: cover, 660px;
+    }
+}
+
+// mobile
+@media (max-width:340px) {
+    .bg-banner {
+        padding-top: 30px;
+    }
+    .row-banner h1:nth-child(1) {
+        font-size: 32px;
+    }
+    .row-banner h1:nth-child(2) {
+        line-height: 40px;
+        word-spacing: normal;
+    }
+    .row-banner p{
+        width: 100%;
+        line-height: 30px;
+        padding-top: 30px;
+    }
+
+    .img-girl {
+        display: none;
+    }
+    
+    .banner-input {
+        // display: none;
+        display: block;
+        background-size: cover;
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // justify-items: center;
+    }
+    div.select-banner {
+        margin-bottom: 5px;
+    }
+    // 
+    .select-banner select {
+        width: 259px;
+        height: 40px;
+        padding: 10px;
+    }
+    .select_arrow {
+        top: 18px;
+        right: -40px;
+    }
+    .pagination a.active {
+        width: 159px;
+    }
+    .banner-input button {
+        width: 259px;
+    }
+    // 
+}
