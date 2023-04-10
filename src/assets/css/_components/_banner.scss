@@ -214,6 +214,8 @@ select .select:hover {
 //___________________________________________
 
 .banner-input button {
+    @include heading($font-medium,14px,$wight);
+    text-transform: none;
     cursor: pointer;
     margin-top: 26px;
     @include buttons($pr-1-dark-1, $wight, 200px, 50px, $pr-1-dark-1,3px, 40px)
@@ -242,7 +244,7 @@ select .select:hover {
 }
 
 // table
-@media (max-width:950px) {
+@media (max-width:950px) and (min-width:340px){
     .bg-banner {
         padding-top: 70px;
     }
@@ -255,6 +257,9 @@ select .select:hover {
     }
     .bg-banner {
         background-size: cover, 660px;
+    }
+    section.banner-input {
+        // padding: 25px;
     }
 }
 

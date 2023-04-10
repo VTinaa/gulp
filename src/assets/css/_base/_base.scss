@@ -19,3 +19,49 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.sprite {
+    background-image: url(../img/sprite/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+// sprite_middle
+.sprite-Vector1 {
+    width: 86px;
+    height: 89px;
+    background-position: -5px -292px;
+}
+.sprite-Vector2 {
+    width: 86px;
+    height: 88px;
+    background-position: -5px -391px;
+}
+.sprite-Vector3 {
+    width: 86px;
+    height: 88px;
+    background-position: -5px -489px;
+}
+
+// sprite_bottom
+
+.sprite-Step1 {
+    width: 61px;
+    height: 61px;
+    background-position: -5px -5px;
+}
+.sprite-Step2 {
+    width: 51px;
+    height: 64px;
+    background-position: -5px -76px;
+}
+.sprite-Step3 {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -150px;
+}
+.sprite-Step4 {
+    width: 62px;
+    height: 62px;
+    background-position: -5px -220px;
+}
+// 

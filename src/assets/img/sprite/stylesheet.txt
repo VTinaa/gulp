@@ -46,6 +46,11 @@
     background-position: -5px -489px;
 }
 
+.sprite-face {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -587px;
+}
 
 <i class="sprite sprite-Step1"></i>
 <i class="sprite sprite-Step2"></i>
@@ -54,3 +59,4 @@
 <i class="sprite sprite-Vector1"></i>
 <i class="sprite sprite-Vector2"></i>
 <i class="sprite sprite-Vector3"></i>
+<i class="sprite sprite-face"></i>
