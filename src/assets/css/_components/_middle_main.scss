@@ -371,7 +371,161 @@ section.step-procedure {
 }
 
 
+// Program_main
+.main-program {
+    padding-top: 55px;
 
+    // padding-bottom: 90px;
+    padding-bottom: 340px;
+
+    background-color: $prime-1;
+    background-image: url(../img/cloud-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+div.text-center {
+    text-align: center;
+}
+div.text-center h5 {
+    @include heading($font-regular,15px,$pr-1-light-2);
+}
+div.text-center h2 {
+    @include heading($font-medium,33px,$wight);
+}
+div.text-center p {
+    @include heading($font-medium,20px,$pr-1-light-3);
+    margin-bottom: 80px;
+}
+section.block-program {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 58.5% 41.5%;
+
+    // position: relative;
+    // top: 222px;
+    position: absolute;
+    top: 405px;
+    right: 12%;
+}
+div.main-program {
+    position: relative;
+    
+}
+
+// wight
+article.block-wight {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    padding: 50px 40px;
+}
+
+article.block-wight div:nth-child(1) {
+    padding: 20px 80px 35px 60px;
+    border-right: 1px solid $pr-4-light-2;
+    border-bottom: 1px solid $pr-4-light-2;
+}
+article.block-wight div:nth-child(2) {
+    padding: 20px 60px 35px 80px;
+    border-bottom: 1px solid $pr-4-light-2;
+}
+article.block-wight div:nth-child(3) {
+    padding: 35px 80px 20px 60px;
+    border-right: 1px solid $pr-4-light-2;
+}
+article.block-wight div:nth-child(4) {
+    padding: 35px 60px 20px 80px;
+}
+article.block-wight p:nth-child(1) {
+    @include heading($font-bold,35px,$prime-2);
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 40px;
+    text-align: center;
+}
+article.block-wight p:nth-child(2){
+    @include heading($font-regular,14px,$pr-4-light-1);
+    text-align: center;
+    margin-bottom: 0;
+}
+article.block-wight p:nth-child(3) {
+    @include heading($font-semiBold,17px,$prime-1);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// blue
+article.block-blue {
+    background-color: $prime-1;
+    padding: 20px 25px;
+}
+div.div-border h3 {
+    text-transform: uppercase;
+    text-align: center;
+    @include heading($font-semiBold,25px,$wight);
+    margin-top: 0;
+}
+div.div-border p {
+    @include heading($font-italik,18px,$wight);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+div.div-border span {
+    font-size: 20px;
+}
+div.div-border {
+    padding:30px 30px 40px;
+    border: dashed 2px $pr-1-dark-1;
+    border-radius: 20px;
+    position: relative;
+}
+div.div-border img{
+    position: absolute;
+    bottom: -2px;
+    right: -56px;
+}
+
+div.div-border-2 {
+    padding: 25px 80px 25px 80px;
+    text-align: center;
+    background-color: $pr-1-dark-1;
+    border: dashed 2px $wight;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+div.div-border-2 img:nth-of-type(1) {
+    position: absolute;
+    top: -15px;
+    left: -10px;
+}
+div.div-border-2 img:nth-of-type(2) {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+}
+div.div-border-2 span {
+    @include heading($font-medium,24px,$wight);
+    position: relative;
+    right: 50px;
+}
+div.div-border-2 p:nth-of-type(1) {
+    @include heading($font-semiBold,61px,$prime-3);
+    line-height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+div.div-border-2 p:nth-of-type(2) {
+    @include heading($font-regular,14px,$wight);
+    margin: 0;
+}
 
 
 
