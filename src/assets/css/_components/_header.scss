@@ -20,6 +20,7 @@
     align-items: center;
 }
 .row img {
+    cursor: pointer;
     float: left;
 }
 .bg-top-header h1 {
@@ -36,6 +37,7 @@
     font-family: $font-GabrLo;
     font-size: 39px;
 }
+
 span.logo-color{
     font-family: $font-light;
     font-size: 20px;
