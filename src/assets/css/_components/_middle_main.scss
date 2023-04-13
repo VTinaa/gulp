@@ -149,6 +149,9 @@ div.order{
     @include buttons($pr-1-dark-1, #fff, 280px, 50px, $pr-1-dark-1,3px, 40px);
     @include heading($font-medium,14px,$wight);
 }
+.order button:hover {
+    @include btn-hover($pr-1-light-2,$pr-1-light-2)
+}
 
 
 
@@ -600,8 +603,7 @@ article.maim-05::before {
     position: absolute;
     top: 175px;
     left: -276px;
-
-   
+    cursor: pointer;
 }
 article.maim-05::after {
     content: "";
@@ -614,6 +616,7 @@ article.maim-05::after {
     position: absolute;
     bottom: 175px;
     right: -276px;
+    cursor: pointer;
 }
 
 
